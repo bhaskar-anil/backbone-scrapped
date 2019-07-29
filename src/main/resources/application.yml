@@ -1,0 +1,23 @@
+server:
+  port: 9099
+spring:
+  application:
+    name: taskoo
+  profiles:
+    active: local
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/taskoo?serverTimezone=UTC
+    username: root
+    password: sg20190409
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: /manage
+      exposure:
+        include: health, auditevents, info, metrics
