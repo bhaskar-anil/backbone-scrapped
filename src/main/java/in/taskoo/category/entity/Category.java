@@ -25,7 +25,4 @@ public class Category {
 
     @Column(name = "title")
     private String title;
-
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    private List<Task> tasks;
 }

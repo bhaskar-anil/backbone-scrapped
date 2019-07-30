@@ -31,7 +31,4 @@ public class Task {
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
-
-    @OneToMany(mappedBy = "task")
-    private List<Attribute> attributes;
 }
