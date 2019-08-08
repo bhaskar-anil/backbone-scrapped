@@ -12,4 +12,12 @@ public class CategoryMapper {
     public Category mapToEntity(CategoryDTO dto) {
         return Category.builder().title(dto.getTitle()).build();
     }
+
+	public CategoryDTO mapToCategory(Category category) {
+
+        return CategoryDTO.builder()
+                .id(category.getId())
+                .title(category.getTitle())
+                .build();
+	}
 }
