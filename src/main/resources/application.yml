@@ -12,7 +12,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/taskoo?serverTimezone=UTC
     username: root
-    password: sg20190409
+    password:
 
 management:
   endpoints:
